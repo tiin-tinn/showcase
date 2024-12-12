@@ -1,0 +1,27 @@
+:root {
+  --c-pink: #ff0062;
+  --c-purple: #1f18df;
+  --c-beige: #f9f9ef;
+
+  --pri-fontfam: "DM Sans", sans-serif;
+  --sec-fontfam: "Inter", sans-serif;
+
+  --fontsize-xxl: 10rem;
+  --fontsize-xl: 5.5rem;
+  --fontsize-llg: 4rem;
+  --fontsize-mlg: 3rem;
+  --fontsize-lg: 2rem;
+  --fontsize-800: 1.8rem;
+  --fontsize-700: 1.7rem;
+  --fontsize-650: 1.5rem;
+  --fontsize-600: 1.3rem;
+  --fontsize-500: 1.2rem;
+  --fontsize-450: 1.1rem;
+  --fontsize-400: 1rem;
+  --fontsize-350: 0.9rem;
+  --fontsize-300: 0.8rem;
+  --fontsize-250: 0.7rem;
+  --fontsize-200: 0.6rem;
+
+  --border: 1px solid #d8d840;
+}
