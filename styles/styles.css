@@ -53,6 +53,9 @@ html {
   overflow-x: hidden;
   max-width: 1920px;
   margin: auto;
+  background-color: transparent;
+  /* animation: bgColor infinite 10s; */
+  /* transition: animation ease-in-out 0.3s; */
 }
 
 img {
@@ -161,7 +164,7 @@ section {
 .s {
   background-image: url("../images/s.svg");
   animation: colorTransition 10s infinite;
-  padding-left: 1%;
+  padding-left: 2.3%;
 }
 
 .y {
@@ -172,6 +175,7 @@ section {
 .n {
   background-image: url("../images/n.svg");
   animation: colorTransition 10s infinite;
+  padding-left: 1.4%;
 }
 
 .c {
@@ -179,6 +183,11 @@ section {
   animation: colorTransition 10s infinite;
 }
 
+.svg-container {
+  height: 226px;
+  display: inline-block;
+  justify-content: left;
+}
 /* --- Content Layout --- */
 .eventname {
   --width: 104%;
@@ -223,13 +232,13 @@ section {
 }
 
 .eventdetails-gap {
-  --v-gapheight: 20rem;
+  --v-gapheight: 18rem;
   height: var(--v-gapheight);
 }
 
 @media (min-width: 1600px) {
   .eventdetails-gap {
-    --v-gapheight: 24rem;
+    --v-gapheight: 18rem;
   }
 }
 
@@ -445,6 +454,8 @@ iframe {
   pointer-events: none; /* Prevent interaction */
   z-index: -1; /* Send to background */
   outline: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 /* Responsive adjustments for larger screens */
 @media (min-width: 1600px) {
@@ -465,6 +476,10 @@ iframe {
 }
 
 /* --- Animations --- */
+.animate-bg {
+  animation: bgColor 10s infinite; /* Adjust duration as needed */
+}
+
 @keyframes colorTransition {
   0% {
     filter: brightness(1) hue-rotate(200deg); /* Sky Blue */

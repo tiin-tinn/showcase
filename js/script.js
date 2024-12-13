@@ -8,6 +8,21 @@ document.addEventListener("DOMContentLoaded", () => {
   setupClosePopupOnInteraction()
 })
 
+window.addEventListener("load", function () {
+  const iframe = document.querySelector("iframe")
+  const mainBody = document.querySelector("body")
+
+  // Initially hide the iframe
+  iframe.style.opacity = 0
+
+  // Wait for the iframe to load (adjust timeout as needed)
+  setTimeout(function () {
+    iframe.style.opacity = 1 // Fade in the iframe
+    // Remove animation class after fade-in (optional)
+    mainBody.classList.remove("animate-bg")
+  }, 3000) // Adjust the timeout to control the delay
+})
+
 function animateSections() {
   // Setup animations for various sections
   animateSection("#about .animate-text", "#about", 60, 10)
